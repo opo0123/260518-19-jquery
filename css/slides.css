@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+}
+.slide-wrap {
+  width: 600px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+/* 좌우 슬라이드 */
+.slide-list {
+  display: flex;
+}
+.slide-list li {
+  /* flex: 0 - 여분 공간 X */
+  /* flex-shrink: 0 - 공간이 부족해도 줄어들지 않음 */
+  /* flex-basis: 1000px - 아이템 기본 크기 */
+  flex: 0 0 600px;
+}
+
+/* 위로 슬라이드 */
+.slide-up-box {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+.slide-list-up {
+  position: relative;
+}
+.slide-list-up li {
+  height: 400px;
+}
+
+/* 페이드 인.아웃 */
+.slide-fade {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.slide-fade li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
